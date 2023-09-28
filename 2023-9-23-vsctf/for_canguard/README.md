@@ -53,3 +53,6 @@ Finally, I piped the output of the script to a text file and searched for "vsctf
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/9ee3ba17-f1be-4402-8e73-250b8dbbe43c)
 
+## Additional notes and research
+
+When trying to replicate the solve for this writeup, I ran into a problem where I wasn't able to open the .ad1 file with FTK imager anymore. As it turns out, my assumption was wrong and its actually necessary to have both the .ad1 and .ad2 file in the same directory for it to work. You can also open either of the files with FTK imager and be able to interact with the same disk image no matter which one you open. Information on this file format online is scarce, but from what I've been able to gather I learned that it is a proprietary disk image format created by AccessData and can only be directly opened by FTK Imager. Because of this its not very popular or well supported. The two files that we download from the ctf are individual files within a set of files that make up the disk image, and therefore are complimentary to each other and need to be together in a directory to function.
