@@ -10,4 +10,8 @@ With FTK Imager open we can access the .ad1 file by going to File > Add Evidence
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/04e6e3ea-dfbb-4324-855b-c5204a4597a7)
 
-According to the article Vanguard Logs can be gathered at the following file path: "C:\Program Files\Riot Vanguard".
+According to the article, Vanguard Logs can be gathered at the following folder: "C:\Program Files\Riot Vanguard". After locating these logs we can export the whole folder out of ftk imager by right clicking on it and then clicking export files. Now that we have the logs we can start manipulating them to find our flag. Let's print out the contents of one log to see what we're dealing with.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/fcfcecbc-5091-44cd-80b7-3d6991c06bde)
+
+As to be expected of logs that are meant to be kept private to Riot, they are encrypted on our local systems.
