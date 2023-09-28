@@ -18,7 +18,11 @@ As to be expected of logs that are meant to be kept private to Riot, they are en
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/ccb9d3b1-355e-4e39-9cb3-3eed788049e9)
 
-While I don't want to start hacking games anytime soon, this script will definitely prove useful for our situation. I then asked ChatGPT (because I'm still working on my scripting skills) to write me a script that will execute a desired command on every file within a specified directory. Then I made some slight tweaks to have it working as I wanted and ended up with the following script.
+While I don't want to start hacking games anytime soon, this script will definitely prove useful for our situation. I tested the script on just one of the logs and was a bit surprised by the output.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/118ad74c-bb2a-41bc-9cd4-05270726d15f)
+
+At this point I was a bit lost and started overthinking, but with some help and guidance I decided to just try and see if the flag was somewhere in one of these many log files. So I asked ChatGPT (because I'm still working on my scripting skills) to write me a script that will execute a desired command on every file within a specified directory. Then I made some slight tweaks to have it working as I wanted and ended up with the following script.
 
 ```
 import os
@@ -44,4 +48,8 @@ for filename in os.listdir(folder_path):
         except subprocess.CalledProcessError as e:
             print(f"Error executing command for {filename}: {e}")
 ```
+
+Finally, I piped the output of the script to a text file and searched for "vsctf" to get the flag: vsctf{0h_w0W!_v4Ngu4rd_l0Gs_d3CrYpt3D_sHh!!_d0Nt_T3Ll_3vErd0X_>:(}
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/9ee3ba17-f1be-4402-8e73-250b8dbbe43c)
 
