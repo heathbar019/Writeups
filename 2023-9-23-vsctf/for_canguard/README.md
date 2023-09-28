@@ -20,7 +20,7 @@ As to be expected of logs that are meant to be kept private to Riot, they are en
 
 While I don't want to start hacking games anytime soon, this script will definitely prove useful for our situation. I then asked ChatGPT (because I'm still working on my scripting skills) to write me a script that will execute a desired command on every file within a specified directory. Then I made some slight tweaks to have it working as I wanted and ended up with the following script.
 
-'''
+```
 import os
 import subprocess
 
@@ -43,5 +43,5 @@ for filename in os.listdir(folder_path):
             print(f"Command executed successfully for {filename}")
         except subprocess.CalledProcessError as e:
             print(f"Error executing command for {filename}: {e}")
-'''
+```
 
