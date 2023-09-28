@@ -14,4 +14,34 @@ According to the article, Vanguard Logs can be gathered at the following folder:
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/fcfcecbc-5091-44cd-80b7-3d6991c06bde)
 
-As to be expected of logs that are meant to be kept private to Riot, they are encrypted on our local systems.
+As to be expected of logs that are meant to be kept private to Riot, they are encrypted on our local systems. A google search for "riot vanguard log decryptor" will yield the following [forum for hacking games](https://www.unknowncheats.me/forum/anti-cheat-bypass/488665-vanguard-log-decryptor.html).
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/ccb9d3b1-355e-4e39-9cb3-3eed788049e9)
+
+While I don't want to start hacking games anytime soon, this script will definitely prove useful for our situation. I then asked ChatGPT (because I'm still working on my scripting skills) to write me a script that will execute a desired command on every file within a specified directory. Then I made some slight tweaks to have it working as I wanted and ended up with the following script.
+
+'''
+import os
+import subprocess
+
+# Define the command to run
+command_template = "python vangaurddecryptor.py {}"
+
+# Specify the folder containing the files
+folder_path = r"C:\Users\heath\Downloads\Logs"
+
+# Iterate through the files in the folder
+for filename in os.listdir(folder_path):
+    # Check if the file is a regular file (not a directory)
+    if os.path.isfile(os.path.join(folder_path, filename)):
+        # Generate the full command by substituting the filename
+        full_command = command_template.format(os.path.join(folder_path, filename))
+        
+        # Execute the command using subprocess
+        try:
+            subprocess.run(full_command, shell=True, check=True)
+            print(f"Command executed successfully for {filename}")
+        except subprocess.CalledProcessError as e:
+            print(f"Error executing command for {filename}: {e}")
+'''
+
