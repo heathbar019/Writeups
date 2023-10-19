@@ -2,5 +2,4 @@
 
 ### Table of Contents
 
-* [Ez PDF (forensics)](for_ez_pdf)
-* 
+* [Ez PDF (forensics)](for_Ez_PDF)
