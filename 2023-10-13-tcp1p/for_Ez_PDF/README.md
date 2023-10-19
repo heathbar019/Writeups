@@ -24,7 +24,7 @@ Now there is only one piece of the flag missing! One of a few methods I tried to
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/1387f3a8-694b-44fb-a29d-f9b232b0b294)
 
-I pasted all of into an online JS compiler and noticed that this code was very obfuscated and difficult to understand.
+I pasted all of the code into an online JS compiler and noticed that this code was very obfuscated and difficult to understand.
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/ab47be14-9c03-411a-85a9-e963cb7f8aba)
 
