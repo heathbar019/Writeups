@@ -1,8 +1,7 @@
 # DEADFACE CTF - Git Rekt (traffic analysis, 50p, 364 solves) 10/25/2023
 
 > One of our teammates at Turbo Tactical ran a phishing campaign on spookyboi and thinks spookyboi may have submitted credentials. We need you to take a look at the PCAP and see if you can find the credentials.
-
-Submit the password as the flag: flag{password}.
+> Submit the password as the flag: flag{password}.
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/8bcd2697-b2fa-4192-b3d1-ff6afb77a031)
 
