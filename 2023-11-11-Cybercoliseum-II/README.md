@@ -2,5 +2,4 @@
 
 ### Table of Contents
 
-* [Git Rekt (forensics/traffic analysis)](pcap_git_rekt)
-* [Tin Balloon (forensics)](for_tin_balloon)
+* [Imposter (steganography)](steg_imposter)
