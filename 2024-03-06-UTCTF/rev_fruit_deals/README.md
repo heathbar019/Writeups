@@ -6,7 +6,7 @@
 > 
 > By Samintell (@samintell on discord)
 
-## Preface
+### Preface
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/807d1035-0dc8-4cb0-b2b4-ac6a9834a897)
 
