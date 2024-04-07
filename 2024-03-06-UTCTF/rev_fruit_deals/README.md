@@ -11,12 +11,4 @@ This CTF challenge involves reverse engineering a Microsoft Excel file and the m
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/e33ca04f-b5ad-4426-8e36-409915697e11)
 
-In this challenge, we are given a PCAP file and are told that we need to find the captured credentials of "spookyboi" from a phishing campaign within the file. We can open up PCAP files in a program called Wireshark, which is used to capture and analyze packets. Once open in Wireshark, we can see in the bottom left that this file contains a total of 3562 packets. We aren't going to look through all of these packets manually so instead we can perform a search. To search for a string, we can go to Edit > Find Packet, then configure the search to "Packet Details" and "String". Now we just need to type in a string! When I solved this challenge I searched for "password" but since we were given the username "spookyboi" you could also search for that too. Either way, we will find the following packet.
-
-![image](https://github.com/heathbar019/Writeups/assets/114100890/6ba3027c-9cd5-4a19-8658-b22f737eb283)
-
-Within this packet is an HTML form with the items "login" and "password" from which we can derive the credentials "spookyboi@deadface.io" and "SpectralSecrets#2023".
-
-![image](https://github.com/heathbar019/Writeups/assets/114100890/d04b250f-6947-479f-8042-265e4c224e59)
-
-Since the challenge asks for the password as the flag, then we can submit "flag{SpectralSecrets#2023}"
+We are provided with a single excel file called "deals.xlsm", which we are warned has tried to download a malicious file. A common way that threat actors attempt to spread malware onto their victims computers are through a special kind of trojan that utilizes the macro feature on microsoft office file formats like word, excel, powerpoint, etc. These macros can attempt to execute commands on victims computers without them noticing, and this file serves as a good example of this.
