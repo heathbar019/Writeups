@@ -1,4 +1,4 @@
-# CTF writeups
+# CTF Writeups
 
 ## 2023
 * [2023.09.23 **VSCTF 2023**](2023-09-23-DEADFACECTF)
