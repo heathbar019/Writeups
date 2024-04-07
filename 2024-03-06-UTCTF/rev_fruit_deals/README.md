@@ -7,8 +7,9 @@
 > By Samintell (@samintell on discord)
 
 ## Preface
+This CTF challenge involves reverse engineering a Microsoft Excel file and the macro script within it. This excel file comes with pre-enabled macros that, like the challenge introduction says, mimicks malicious behavior. Anti-virus will flag it but do not worry.
 
-![image](https://github.com/heathbar019/Writeups/assets/114100890/807d1035-0dc8-4cb0-b2b4-ac6a9834a897)
+![image](https://github.com/heathbar019/Writeups/assets/114100890/e33ca04f-b5ad-4426-8e36-409915697e11)
 
 In this challenge, we are given a PCAP file and are told that we need to find the captured credentials of "spookyboi" from a phishing campaign within the file. We can open up PCAP files in a program called Wireshark, which is used to capture and analyze packets. Once open in Wireshark, we can see in the bottom left that this file contains a total of 3562 packets. We aren't going to look through all of these packets manually so instead we can perform a search. To search for a string, we can go to Edit > Find Packet, then configure the search to "Packet Details" and "String". Now we just need to type in a string! When I solved this challenge I searched for "password" but since we were given the username "spookyboi" you could also search for that too. Either way, we will find the following packet.
 
