@@ -42,4 +42,11 @@ This isn't very pretty to look at either. The macro is quite lengthy but fairly 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/c2064735-d752-4414-9728-e54ea714904a)
 
 This command can be broken down into a few key parts:
-* hi
+* First, it launches a powershell session and specifies that it wants to execute a command.
+* Then, it creates a .NET WebClient object and assigns it to "$oaK". This class is commonly used for downloading internet files via PowerShell.
+* Next, the variable "$0rA" is set to the URL 'http://fruit.gang/malware'. This is where the malware will be downloaded from.
+* Then, the variable "$CNTA" is set to the string 'banANA-Hakrz09182afd4', which is the name of the file being downloaded. This is our flag!
+* Next, it creates a file path that indicated where the malware will be downloaded and stores it into "$jri".
+* Finally, within a try-catch block, it attempts to download the file from the previously mentioned URL and attempts to execute it using "Invoke-Item" cmdlet.
+
+After analyzing this command, we know that the malicious file that was attempted to be downloaded is called 'banANA-Hakrz09182afd4', and from this we can create the flag: utflag{banANA-Hakrz09182afd4}
