@@ -23,9 +23,23 @@ Within the Macro Organizer we can see two macros called "Module1" and "Module2".
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/a8dd1c05-20c9-4445-bfc6-303b1aed9e6f)
 
-Quickly analyzing this code will tell you that this macro is working in "Sheet2", iterating through evey cell within the range A1 to AA100, and filling it with 8 characters of a random base64 string. Initially this may confuse you, as it did me, because if you look back at our worksheet there is only one worksheet called "Deals". After some clicking around and thinking, I remembered the you can hide/show worksheets by clicking on the bar at the bottom that displays the currently open worksheets.
+Quickly analyzing this code will tell you that this macro is working in "Sheet2", iterating through every cell within the range A1 to AA100, and filling it with 8 characters of a random base64 string. Sheet2? Initially this may confuse you, as it did me, because if you look back at our worksheet there is only one worksheet called "Deals". After some clicking around and thinking, I remembered the you can hide/show worksheets by clicking on the bar at the bottom that displays the currently open worksheets.
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/88265e7e-f955-45b3-b01e-f2ed1285969e)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/9b389b10-82b2-44c2-b2ca-959faabe0018)
 
-Great!
+Now we can open up sheet2 and see what's going on...
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/31f23e50-929b-43fa-97f1-4c2b049acc14)
+
+So it isn't very pretty, but it's basically what we expected, many cells filled with random 8 character base64 strings. This doesn't really mean much to us right now so let's take a look at the second macro, "Module2".
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/c404ce3b-8914-456b-9cc3-b7960b396cbd)
+![image](https://github.com/heathbar019/Writeups/assets/114100890/1b24aae3-977f-4ac1-8eed-a39381e920a9)
+
+This isn't very pretty to look at either. The macro is quite lengthy but fairly simple to summarize. A string "f" is declared, followed by six more strings with long alphanumeric names. Then, through a series of a little under 200 lines worth of if-then statements, substrings are appended to each of the six oddly-named strings by comparing values from the cells of "sheet2" to base64 strings. After that, it concatenates the six strings into the string "f" and attempts to execute the result as a command. The path from here is fairly straightforward, we need to find f by concatenating each of the strings. Some other writeups that I reviewed for this challenge had an efficient approach to finding f by modifying the macro to simply print f into a cell after doing all the work instead of executing it. I, unfortunately, did not have this intuition while solving the challenge and instead opted for concatenating the strings manually... In the end, after too much time, I concatenated the following string for f.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/c2064735-d752-4414-9728-e54ea714904a)
+
+This command can be broken down into a few key parts:
+* hi
