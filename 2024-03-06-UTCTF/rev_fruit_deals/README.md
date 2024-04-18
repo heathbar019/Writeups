@@ -44,7 +44,7 @@ This isn't very pretty to look at either. The macro is quite lengthy but fairly 
 This command can be broken down into a few key parts:
 * First, it launches a Powershell session and specifies that it wants to execute a command.
 * Then, it creates a .NET WebClient object and assigns it to "$oaK". This class is commonly used for downloading internet files via PowerShell.
-* Next, the variable "$0rA" is set to the URL 'http://fruit.gang/malware'. This is where the malware will be downloaded from.
+* Next, the variable "$0rA" is set to the URL 'http://fruit\.gang/malware'. This is where the malware will be downloaded from.
 * Then, the variable "$CNTA" is set to the string 'banANA-Hakrz09182afd4', which is the name of the file being downloaded. This is our flag!
 * Next, it creates a file path that indicates where the malware will be downloaded and stores it in "$jri".
 * Finally, within a try-catch block, it attempts to download the file from the previously mentioned URL and attempts to execute it using the "Invoke-Item" cmdlet.
