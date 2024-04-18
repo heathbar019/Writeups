@@ -15,7 +15,7 @@ We are provided with a single excel file called "deals.xlsm", which we are warne
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/d84dc7a0-23da-4558-8cb0-fa06df83fab1)
 
-Unfortunately, there are no fruit deals anywhere to be found and within the table we are urged to "Enable Content" to see these deals. While this may fool some people, we know better! Newer versions of Office/Libre will automatically disable any macros within files, and this instruction is the threat actor's attempt at getting the user to bypass this safety restriction themselves. If you look closely at the yellow banner at the top of the screen, Libra allows us to view the macros without enabling them if we click "Show Macros".
+Unfortunately, there are no fruit deals anywhere to be found and within the table we are urged to "Enable Content" to see these deals. While this may fool some people, we know better! Newer versions of Office/Libre will automatically disable any macros within files, and this instruction is the threat actor's attempt at getting the user to bypass this safety restriction themselves. If you look closely at the yellow banner at the top of the screen, Libre allows us to view the macros without enabling them if we click "Show Macros".
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/d7dfda30-d3fe-49d0-89f1-d58ebdaa52df)
 
