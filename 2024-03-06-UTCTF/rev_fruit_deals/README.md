@@ -7,8 +7,12 @@
 > By Samintell (@samintell on discord)
 
 ## Preface
-This CTF challenge involves reverse engineering a Microsoft Excel file and the macro script within it. This excel file comes with pre-enabled macros that, like the challenge introduction says, mimicks malicious behavior. Anti-virus will flag it but do not worry.
+This CTF challenge involves reverse engineering a Microsoft Excel file. This Excel file comes with pre-enabled macros that, like the challenge introduction says, mimicks malicious behavior. Anti-virus will most likely flag it but do not worry, it is only meant to mimick a malicious file and no harm will come to your system!
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/e33ca04f-b5ad-4426-8e36-409915697e11)
 
-We are provided with a single excel file called "deals.xlsm", which we are warned has tried to download a malicious file. A common way that threat actors attempt to spread malware onto their victims computers are through a special kind of trojan that utilizes the macro feature on microsoft office file formats like word, excel, powerpoint, etc. These macros can attempt to execute commands on victims computers without them noticing, and this file serves as a good example of this.
+We are provided with a single excel file called "deals.xlsm", which we are warned has tried to download a malicious file and the name of that file will be our flag. The file extension ".xlsm" is indicative of an Excel macro-enabled workbook file. A common way that threat actors attempt to spread malware onto their victims computers are through a special kind of trojan that utilizes the macro feature on Microsoft Office file formats like word, excel, powerpoint, etc. These macros may attempt to execute commands on victim's computers without them noticing, and this file (as we will soon find out) serves as a good example of this. To get a closer look I'm going to open the file with LibreOffice's Calc on Linux. All of the following steps can be done exactly the same using Microsoft Office's Excel, however it may require some extra steps to trust the file and view the macro.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/10ed4b98-a619-41fb-b47c-6b6b733690ea)
+
+Unfortunately, there are no fruit deals anywhere to be found and within the table we are urged to "Enable Content" to see these deals. While this may fool some people, we know better! Newer versions of Office/Libre will automatically disable any macros within files, and this instruction is the threat actor's attempt at getting the user to bypass this safety restriction themselves.
