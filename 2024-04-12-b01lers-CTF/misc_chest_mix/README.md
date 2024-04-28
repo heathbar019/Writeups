@@ -11,7 +11,6 @@ This is a fun challenge involving a minecraft world and exploring it's binary fi
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/d14ae1ee-853a-4bfc-9e07-e8827ba9b560)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/70e24912-75b2-40f9-8f0f-5846694cd4a3)
 
-We start with a zip file called chest-mix.zip, and based off what we are told, we can assume this is probably a folder for a minecraft map/world. Quickly unzipping it and looking inside will confirm this, as we can see exactly what we would expect to see inside a minecraft map folder (advancements, data, entities, playerdata, region, level.dat, etc.)
+We start with a zip file called chest-mix.zip, and based off what we are told, we can assume this is probably a folder for a minecraft map/world. Quickly unzipping it and looking inside will confirm this, as we can see exactly what we would expect to see inside a minecraft map folder (advancements, data, entities, playerdata, region, level.dat, etc.) My first thought was to simply load up the world in minecraft and see what were working with. Maybe it will be as easy as just grabbing a piece of paper from a chest near spawn? But probably not...
 
-![image](https://github.com/heathbar019/Writeups/assets/114100890/2306ad15-d678-4e1e-b0ef-4aeb76f308f0)
-
+![chestmix1](https://github.com/heathbar019/Writeups/assets/114100890/81f6edc1-c8c0-4be4-92d6-64372e396d12)
