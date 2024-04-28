@@ -14,3 +14,11 @@ This is a fun challenge involving a minecraft world and exploring it's binary fi
 We start with a zip file called chest-mix.zip, and based off what we are told, we can assume this is probably a folder for a minecraft map/world. Quickly unzipping it and looking inside will confirm this, as we can see exactly what we would expect to see inside a minecraft map folder (advancements, data, entities, playerdata, region, level.dat, etc.) My first thought was to simply load up the world in minecraft and see what were working with. Maybe it will be as easy as just grabbing a piece of paper from a chest near spawn? But probably not...
 
 ![chestmix1](https://github.com/heathbar019/Writeups/assets/114100890/81f6edc1-c8c0-4be4-92d6-64372e396d12)
+
+So I spawn in, look around, and yes, of course there is an absolutely ginormous terracotta chest. I wanted to change my gamemode to creative so I could get a better look around and inside the chest, but the world had cheats turned off. Unfortunately, the only to turn cheats back on after creating a minecraft world is to manually edit the game files. So for the time being, I went up to the chest and punched out a few blocks to try and get a better look at the inside.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/140aa10b-15c7-45d8-b4de-795412db31cb)
+![image](https://github.com/heathbar019/Writeups/assets/114100890/c2438897-4c69-4c02-97e4-cc8ca6767178)
+
+
+Peeking inside reveals some actual chests, and from what I can tell, there is a lot of them. Judging by the way my game drops to three frames per second whenever I am near and/or facing the giant chest structure, it's safe to assume that this entire giant chest is filled with smaller real chests, and all of the block entities are degrading my game's performance. Looking inside these chests we can see that they are full of single pieces of paper, some of which are renamed to "Nope, not in this chest :D". At this point, the actual nature of this challenge becomes clear. We will have to somehow devise a way to search through every paper in every single chest, and determine which one has the flag written on it.
