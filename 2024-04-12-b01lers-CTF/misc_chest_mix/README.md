@@ -5,7 +5,9 @@
 > By colbyjack
 
 ## Preface
-This is a fun challenge involving a minecraft world and exploring it's binary files! To solve this challenge I needed a tool called NBTExplorer as well access to minecraft version 1.20, so make sure you have these if you want to follow along. If you do not own minecraft but still want to try to solve this challenge, I will discuss using an alternative [tool](https://unmined.net/downloads/) later in the solution.
+This is a fun challenge involving a minecraft world and exploring it's binary files! To solve this challenge I needed a tool called NBTExplorer as well access to minecraft version 1.20, so make sure you have these if you want to follow along. If you do not own minecraft or do not have it installed, but still want to try to solve this challenge, I will discuss using an alternative [tool](https://unmined.net/downloads/) later in the solution.
+
+## Solving
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/d14ae1ee-853a-4bfc-9e07-e8827ba9b560)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/70e24912-75b2-40f9-8f0f-5846694cd4a3)
