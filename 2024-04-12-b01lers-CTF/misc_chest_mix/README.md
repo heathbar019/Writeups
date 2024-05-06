@@ -15,7 +15,7 @@ We start with a zip file called chest-mix.zip, and based off what we are told, w
 
 ![chestmix1](https://github.com/heathbar019/Writeups/assets/114100890/81f6edc1-c8c0-4be4-92d6-64372e396d12)
 
-So I spawn in, look around, and yes, of course there is an absolutely ginormous terracotta chest. I wanted to change my gamemode to creative so I could get a better look around and inside the chest, but the world had cheats turned off. Unfortunately, the only to turn cheats back on after creating a minecraft world is to manually edit the game files. So for the time being, I went up to the chest and punched out a few blocks to try and get a better look at the inside.
+So I spawn in, look around, and yes, *of course* there is an absolutely ginormous terracotta chest. I wanted to change my gamemode to creative so I could get a better look around and inside the chest, but the world had cheats turned off. Unfortunately, the only way to turn cheats back on after creating a minecraft world is to manually edit the game files. So for the time being, I went up to the chest and punched out a few blocks to try and get a better look at the inside.
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/140aa10b-15c7-45d8-b4de-795412db31cb)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/c2438897-4c69-4c02-97e4-cc8ca6767178)
