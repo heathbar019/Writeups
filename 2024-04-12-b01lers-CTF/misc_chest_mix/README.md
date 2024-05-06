@@ -22,3 +22,5 @@ So I spawn in, look around, and yes, of course there is an absolutely ginormous 
 
 
 Peeking inside reveals some actual chests, and from what I can tell, there is a lot of them. Judging by the way my game drops to three frames per second whenever I am near and/or facing the giant chest structure, it's safe to assume that this entire giant chest is filled with smaller real chests, and all of the block entities are degrading my game's performance. Looking inside these chests we can see that they are full of pieces of paper, some of which are renamed to "Nope, not in this chest :D". At this point, the actual nature of this challenge becomes clear. We will have to somehow devise a way to search through every paper in every single chest, and determine which one has the flag written on it.
+
+From here I did some research online into tools that are capable of exploring and manipulating minecraft's game files, and I came across something called NBTExplorer
