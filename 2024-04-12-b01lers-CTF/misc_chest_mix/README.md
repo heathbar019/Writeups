@@ -23,4 +23,8 @@ So I spawn in, look around, and yes, *of course* there is an absolutely ginormou
 
 Peeking inside reveals some actual chests, and from what I can tell, there is a lot of them. Judging by the way my game drops to three frames per second whenever I am near and/or facing the giant chest structure, it's safe to assume that this entire giant chest is filled with smaller real chests, and all of the block entities are degrading my game's performance. Looking inside these chests we can see that they are full of pieces of paper, some of which are renamed to "Nope, not in this chest :D". At this point, the actual nature of this challenge becomes clear. We will have to somehow devise a way to search through every paper in every single chest, and determine which one has the flag written on it.
 
-From here I did some research online into tools that are capable of exploring and manipulating minecraft's game files, and I came across something called NBTExplorer
+From here I did some research online into tools that are capable of exploring and manipulating minecraft's game files, and I came across something called NBTExplorer. The Named Binary Tag (NBT) is a tree data structure that Minecraft uses in it's save files to store data, and this tool is specifically made for reading and editing those files as well as Minecraft's various other file types (.mcr, .mca). Before anything, I want to enable cheats in this save file so that I can enter creative mode and confirm my suspicions about there being a lot of chests. Now that we have this editor, this should be possible by finding the level.dat file and editing the game rule "allowCommands" to be equal to 1.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/9d0a2af4-0dbf-4b6a-8f54-1bbaf3b1dc30)
+![image](https://github.com/heathbar019/Writeups/assets/114100890/07d82a1b-45fa-4bcf-94cd-df1adc558300)
+
