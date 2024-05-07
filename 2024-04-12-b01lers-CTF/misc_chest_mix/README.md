@@ -64,7 +64,7 @@ Now, all I have to do is find that chest in the game.
 
 There it is!
 
-# Solving Without Minecraft
+### Solving Without Minecraft
 
 I wanted to also include a method to solve this challenge without using Minecraft since not everyone may own a copy of the game. All you really need to solve this challenge within a reasonable time is the coordinates of the chest structure, and perhaps some kind of way to visualize the world without the game itself. Searching for a tool that could do this online, I came across a free application called [uNmINeD](https://unmined.net/downloads/). uNmINeD is an easy-to-use and fast Minecraft world viewer and mapper tool that reads Minecraft Java and Bedrock world files. Uploading the save into this application gives a top-down visualization of the world, and even provides the coordinates for blocks, chunks, and regions. If I had used this tool from the start I could have skipped the annoying calculations!
 
