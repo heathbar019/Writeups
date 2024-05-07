@@ -5,7 +5,7 @@
 > By colbyjack
 
 ## Preface
-This is a fun challenge involving a Minecraft world and exploring its binary files! To solve this challenge I needed a tool called NBTExplorer as well access to Minecraft version 1.20, so make sure you have these if you want to follow along. If you do not own Minecraft or do not have it installed, but still want to try to solve this challenge, I will discuss using an alternative [tool](https://unmined.net/downloads/) later in the solution.
+This is a fun challenge involving a Minecraft world and exploring its binary files! To solve this challenge I needed a tool called NBTExplorer as well access to Minecraft version 1.20, so make sure you have these if you want to follow along. If you do not own Minecraft or do not have it installed, but still want to try to solve this challenge, I will discuss using an alternative tool [later](#Solving Without Minecraft) in the writeup.
 
 ## Solving
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/d14ae1ee-853a-4bfc-9e07-e8827ba9b560)
@@ -66,6 +66,6 @@ There it is!
 
 #Solving Without Minecraft
 
-I wanted to also include a method to solve this challenge without using Minecraft since not everyone may own a copy of the game. All you really need to solve this challenge within a reasonable time is the coordinates of the chest structure, and perhaps some kind of way to visualize the world without the game itself. Searching for a tool that could do this online, I came across a free application called uNmINeD. uNmINeD is an easy-to-use and fast Minecraft world viewer and mapper tool that reads Minecraft Java and Bedrock world files. Uploading the save into this application gives a top-down visualization of the world, and even provides the coordinates for blocks, chunks, and regions. If I had used this tool from the start I could have skipped the annoying calculations!
+I wanted to also include a method to solve this challenge without using Minecraft since not everyone may own a copy of the game. All you really need to solve this challenge within a reasonable time is the coordinates of the chest structure, and perhaps some kind of way to visualize the world without the game itself. Searching for a tool that could do this online, I came across a free application called [uNmINeD](https://unmined.net/downloads/). uNmINeD is an easy-to-use and fast Minecraft world viewer and mapper tool that reads Minecraft Java and Bedrock world files. Uploading the save into this application gives a top-down visualization of the world, and even provides the coordinates for blocks, chunks, and regions. If I had used this tool from the start I could have skipped the annoying calculations!
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/d7c7fb31-2853-40f9-9f25-d6a54b735836)
