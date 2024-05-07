@@ -28,9 +28,21 @@ From here I did some research online into tools that are capable of exploring an
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/9d0a2af4-0dbf-4b6a-8f54-1bbaf3b1dc30)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/07d82a1b-45fa-4bcf-94cd-df1adc558300)
 
-When I load back into the world, I should now be able to use commands to enter creative mode and confirm my beliefs about the chest by flying up aboveto see everything better.
+When I load back into the world, I should now be able to use commands to enter creative mode and confirm my beliefs about the chest by flying up above to see everything better.
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/f0d38a4a-0b42-4f98-99bc-e095a1ed3639)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/f59f31ae-b5b9-4dd5-a36c-0123518e3199)
 
+With my previous suspicions now confirmed, I started to do more research into the Minecraft save file system to see how and where the type of data were looking for is actually stored. What I learned is that the entire Minecraft world is split up into "regions", and these regions are made up of a 32x32 area of "chunks". Furthermore, these chunks are made up of a 16x16 area of blocks. Since the chests containing the papers we want to be searching are blocks, or technically "block_entities", we will need to be looking into the region/chunk files. These files can be found within a subfolder of the world directory called "region.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/afd9577c-5be8-48b0-bf86-d77885338357)
+
+Within the region folder we can .mca files (Minecraft Anvile file format) starting with 'r' and then some coordinates relative to the world spawn. Each of these directories is a region that's been generated in the world, and within each region we can see the corresponding chunks. While we could just try to use the search tool to search each region for an item value containing the flag format "bctf", performing such a wide search would possibly take hours to days to complete. Instead, if we can figure out the coordinates of where the large chest structure is located, we can narrow down our search to only the necessary chunks that contain chests. So I went back into the game and wrote down the coordinates while standing at each corner of the chest.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/09da78a2-11ec-4932-a445-22c60ca7e6e1)
+
+The Y coordinates in this situation are unimportant since chunks extend from the bottom of the world to the top. With the knowledge that chunk 0,0 extends from block 0,0 to block 15,15 (16x16 blocks), we can calculate the chunks that we need to search from these coordinates. From the most negative chunk coordinate to the most positive, we need to search all chunks from -1,-8 to 2, -4. These chunks should be located within regions -1,-1 and 0,-1. From here we can select a chunk, click search, click find, and then 
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/e0da68f2-e4be-4e83-b762-3c54fb579807)
+![image](https://github.com/heathbar019/Writeups/assets/114100890/fedf21c8-5e60-43e8-94ca-2b383b64bb5d)
 
