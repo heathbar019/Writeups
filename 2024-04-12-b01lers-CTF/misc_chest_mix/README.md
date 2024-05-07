@@ -41,8 +41,13 @@ Within the region folder we can .mca files (Minecraft Anvile file format) starti
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/09da78a2-11ec-4932-a445-22c60ca7e6e1)
 
-The Y coordinates in this situation are unimportant since chunks extend from the bottom of the world to the top. With the knowledge that chunk 0,0 extends from block 0,0 to block 15,15 (16x16 blocks), we can calculate the chunks that we need to search from these coordinates. From the most negative chunk coordinate to the most positive, we need to search all chunks from -1,-8 to 2, -4. These chunks should be located within regions -1,-1 and 0,-1. From here we can select a chunk, click search, click find, and then 
+The Y coordinates in this situation are unimportant since chunks extend from the bottom of the world to the top. With the knowledge that chunk 0,0 extends from block 0,0 to block 15,15 (16x16 blocks), we can calculate the chunks that we need to search from these coordinates. From the most negative chunk coordinate to the most positive, we need to search all chunks from -1,-8 to 2, -4. These chunks should be located within regions -1,-1 and 0,-1. From here we can select a chunk, click search, click find, and then specify the value of an item name that will include the flag format "bctf".
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/e0da68f2-e4be-4e83-b762-3c54fb579807)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/fedf21c8-5e60-43e8-94ca-2b383b64bb5d)
 
+Searching an individual chunk should take around 3 minutes or less. After a handful of searches, I was able to locate the paper containing the flag within chunk 1,-5.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/98faf17b-35ad-418a-9f75-552c1bb269e5)
+
+The flag is "bctf{ch1st_ch2st_ch3st_ch4st_ch5st}".
