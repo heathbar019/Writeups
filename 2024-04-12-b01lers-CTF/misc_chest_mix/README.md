@@ -28,3 +28,9 @@ From here I did some research online into tools that are capable of exploring an
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/9d0a2af4-0dbf-4b6a-8f54-1bbaf3b1dc30)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/07d82a1b-45fa-4bcf-94cd-df1adc558300)
 
+When I load back into the world, I should now be able to use commands to enter creative mode and confirm my beliefs about the chest by flying up aboveto see everything better.
+
+![image](https://github.com/heathbar019/Writeups/assets/114100890/f0d38a4a-0b42-4f98-99bc-e095a1ed3639)
+![image](https://github.com/heathbar019/Writeups/assets/114100890/f59f31ae-b5b9-4dd5-a36c-0123518e3199)
+
+
