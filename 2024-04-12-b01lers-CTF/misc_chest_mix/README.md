@@ -54,7 +54,7 @@ The flag is "bctf{ch1st_ch2st_ch3st_ch4st_ch5st}"!
 
 ## Extra
 
-Just for fun, I wanted to see if I could find the piece of paper with the flag on it within the actual game. If we scroll down a tiny bit from where the flag was, we can find information on the actual chest block that contains the paper, specifically its coordinates.
+Just for fun, I wanted to see if I could find the piece of paper with the flag on it within the actual game. If we scroll down a tiny bit from where the flag was, we can find information on the actual chest block that contains the paper, specifically it's coordinates.
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/e1497565-ef04-427e-8aee-21c3a3037e78)
 
