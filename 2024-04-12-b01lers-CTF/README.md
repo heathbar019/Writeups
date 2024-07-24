@@ -1,4 +1,4 @@
-# UTCTF 2024
+# b01lers CTF 2024
 
 ### Table of Contents
 
