@@ -12,7 +12,7 @@ There seem to be many different ways to search for patents, so let's just try th
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/5534ad35-d624-430e-bc69-639f003bb94c)
 
-Now we are on a page where we can finally input our search. There are two text boxes where we can search for individual words, so we can try "spacetime" and "propulsion". This search will wield us a surprising amount of results, however, the patents are sorted by publication date so finding a result from last year should be simple.
+Now we are on a page where we can finally input our search. There are two text boxes where we can search for individual words, so we can try "spacetime" and "propulsion". This search will yield us a surprising amount of results, however, the patents are sorted by publication date so finding a result from last year should be simple.
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/9e4be3ba-f1ab-48de-9deb-0294f875b7c0)
 
