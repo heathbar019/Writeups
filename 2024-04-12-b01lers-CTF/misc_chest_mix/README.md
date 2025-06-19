@@ -33,7 +33,7 @@ When I load back into the world, I should now be able to use commands to enter c
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/f0d38a4a-0b42-4f98-99bc-e095a1ed3639)
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/f59f31ae-b5b9-4dd5-a36c-0123518e3199)
 
-With my previous suspicions now confirmed, I started to do more research into the Minecraft save file system to see how and where the type of data were looking for is actually stored. What I learned is that the entire Minecraft world is split up into "regions", and these regions are made up of a 32x32 area of "chunks". Furthermore, these chunks are made up of a 16x16 area of blocks. Since the chests containing the papers we want to be searching are blocks, or technically "block_entities", we will need to be looking into the region/chunk files. These files can be found within a subfolder of the world directory called "region.
+With my previous suspicions now confirmed, I started to do more research into the Minecraft save file system to see how and where the type of data were looking for is actually stored. What I learned is that the entire Minecraft world is split up into "regions", and these regions are made up of a 32x32 area of "chunks". Furthermore, these chunks are made up of a 16x16 area of blocks. Since the chests containing the papers we want to be searching are blocks, or technically "block_entities", we will need to be looking into the region/chunk files. These files can be found within a subfolder of the world directory called "region".
 
 ![image](https://github.com/heathbar019/Writeups/assets/114100890/afd9577c-5be8-48b0-bf86-d77885338357)
 
