@@ -1,5 +1,4 @@
 # DoD Cyber Sentinel Challenge - Remote Help (forensics, 200p, Medium Difficulty) 6/24/2025
-
 ## Preface
 Unfortunately, I do not have access to the original challenge statement, but it mentions something about a fictional internal attack from a recently hired remote worker. They were able to recover some logs from the time that the failed attack occured.
 
