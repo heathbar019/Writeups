@@ -14,7 +14,8 @@ Here we go, this seems to be yet another bash script - now obfuscated in base64 
 
 ![image](https://github.com/user-attachments/assets/a6de7c73-fddb-4038-a09d-e87336d19171)
 
-```#!/bin/bash
+```
+#!/bin/bash
 
 $log="/tmp/log_$(date +"%Y-%m-%d--%H-%M")"
 $tgz="/tmp/log_$(date +"%Y-%m-%d--%H-%M").tgz"
