@@ -87,4 +87,4 @@ chmod +x "$CHECK_SCRIPT"
 (crontab -l 2>/dev/null | grep -v "$CHECK_SCRIPT"; echo "$CRON_INTERVAL $CHECK_SCRIPT # $CRON_JOB_NAME") | crontab -
 ```
 
-Here's the next steps in the attack, first a couple variables are declared to be used later in the script, including a new URL to explore "https://msoidentity.com/backup_info".
+Here's the next steps in the attack, first a couple variables are declared to be used later in the script, including a new URL to explore "msoidentity.com/backup_info".
