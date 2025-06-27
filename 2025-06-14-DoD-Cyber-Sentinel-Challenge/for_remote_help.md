@@ -131,3 +131,18 @@ We start with more variables being created, almost all of which are either parts
 ![image](https://github.com/user-attachments/assets/dfabe7a9-10d0-436b-a5a2-82800fd64f66)
 ![image](https://github.com/user-attachments/assets/8dab6c59-f237-42c5-93a9-9b3176515cd9)
 
+Theres a lot going on here but basically it's just going even deeper with the data exfiltration and persistence into the system via different methods. What's important though is the simple callback to the attacker server on the very last line of the script. Upon seeing this I tried replicating that callback in the terminal and it returned back to me the last part of the flag, "pr0sp3r}"! 
+
+But wait, I had the first part of the flag and the last part which means I was still missing the second and third parts of the flag. I was thinking I must have missed something in the script in between those two points at which I found those flag parts. After some overthinking and overanalyzing I had decided to explore the github account of the user "supremeleaderbrian", which appeared in the last script. He only had the single repository that contained those two services from earlier, but after checking the commit history I found an earlier version of the timer service!
+
+![image](https://github.com/user-attachments/assets/10bbfd25-d8dd-48ba-bb46-2fc1b7704374)
+
+And at the very bottom you'll see one of the last two flag parts, only one left to go! Unfortunately, this part ended up taking me the longest to find, despite being relatively simple and I'd even say hidden in plain sight... If you look back at the second script we went over, you'll notice a comment regarding the password of the encrypted file and to not put it in plaintext. I had completely missed this the first time during the fast paced competition, thinking that it was just some random password. But if you put this password into cyberchef, it'll reveal itself to be a hex encoded string:
+
+![image](https://github.com/user-attachments/assets/274f1e94-ed51-4a56-9163-086c68b65527)
+
+So is that it?! We have all four of our flag parts right? With this the flag should be "C1{Sn34ky_E3z0g3_VG_w0rk3rs_n3v3r_pr0sp3r}". Hmm no but that doesn't really make sense, maybe "C1{Sn34ky_w0rk3rs_n3v3r_E3z0g3_VG_pr0sp3r}"? Yeah no doesn't look right, and I knew it wasn't because I had tried submitting both flags only to see "Incorrect". So what gives? The part that seems off is the second part that we just got "E3z0g3_VG_". Seeing that this string seems jumbled but still had the correct kind of look to it to pass as part of a flag (underscores and somewhat leet spelling), it made me think it was probably a rotation cipher. With the help of cyberchef yet again, my suspicions were confirmed after trying to decode with the classic ROT13 cipher like so:
+
+![image](https://github.com/user-attachments/assets/161226fa-4c8e-4cf6-8de9-e9613f437fdd)
+
+So now we have "C1{Sn34ky_R3m0t3_IT_w0rk3rs_n3v3r_pr0sp3r}" and it actually looks right now. We have our flag!
