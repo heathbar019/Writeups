@@ -10,7 +10,7 @@
 This CTF was pretty challenging for me and I actually didn't even finish this particular challenge :/ but I got very close! So I wanted to make a writeup anyways since I thought this challenge was interesting, albeit pretty short.
 
 ## Solving
-We are provided with only a packet capture file called "pig.pcapng", so let's open wireshark and see what we're dealing with. The first thing I like to look at when viewing a packet capture for the first time in wireshark is go to Statistics, then Protocol Hierarchy.
+We are provided with only a packet capture file called "pig.pcapng", so let's open wireshark and see what we're dealing with. The first thing I like to look at when viewing a packet capture for the first time in wireshark is in Statistics, then Protocol Hierarchy.
 
 ![image](https://github.com/user-attachments/assets/d393cb5d-cffc-44d7-af46-aa86e083fce2)
 
