@@ -36,7 +36,7 @@ So to reiterate, what this command is doing is...
 - Checking if that field value is higher or lower than 0.3 (effectively grouping each value)
 - Printing a value of 0 or 1 based on that comparison
 
-Now we can take the resulting binary stream and put it into cyberchef for binary decoding. For me, I had to pad some 0's to the start to get it to decode properly and even then I had some characters that were off. This is probably due to the method I used to filter which could certainly be fine tuned a bit but it at least did the job.
+Now we can take the resulting binary stream and put it into cyberchef for binary decoding. For me, I had to pad some 0's to the start to get it to decode properly and even then I had some characters that were off in the output. This is probably due to the method I used to filter which could certainly be fine tuned a bit but it at least did the job.
 
 ![image](https://github.com/user-attachments/assets/bc9a8144-c538-446e-ac99-77f8858afebb)
 
