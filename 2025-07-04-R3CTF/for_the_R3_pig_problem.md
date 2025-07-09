@@ -38,7 +38,6 @@ So to reiterate, what this command is doing is...
 
 Now we can take the resulting binary stream and put it into cyberchef for binary decoding. For me, I had to pad some 0's to the start to get it to decode properly and even then I had some characters that were off. This is probably due to the method I used to filter which could certainly be fine tuned a bit but it at least did the job.
 
-
-
+![image](https://github.com/user-attachments/assets/bc9a8144-c538-446e-ac99-77f8858afebb)
 
 After some small corrections, we have our flag "r3ctf{th3-thr33-b0dy-pr0blem-h4d-n0-solution}"
