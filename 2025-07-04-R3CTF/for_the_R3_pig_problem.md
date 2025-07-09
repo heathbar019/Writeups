@@ -18,7 +18,7 @@ This will show us what kind of protocols and traffic we actually have in this fi
 
 ![image](https://github.com/user-attachments/assets/638ca271-95d6-4fac-afd0-399003262cde)
 
-It may momentarily look like random numbers until you notice the beginning, "3.1415926...". Is that pi?? Yes, it's pi. I thought maybe there were some extra numbers or hidden characters mixed in but I threw it in to a string comparing tool and it's really just plain old pi. About 500 numbers worth. And if you look closer you'll notice that it repeats 3 times. But that doesn't really matter because there isn't going to be a way to derive a flag from just these number values on their own, since the numbers of pi are already predetermined and in this case have not been altered in any way. It was time to search elsewhere...
+It may momentarily look like random numbers until you notice the beginning, "3.1415926...". Is that pi?? Yes, it's pi. I thought maybe there were some extra numbers or hidden characters mixed in but I threw it in to a string comparing tool and it's really just plain old pi. About 500 numbers worth. And if you look closer you'll notice that it repeats 3 times. But that doesn't really matter because there isn't going to be a way to derive a flag from just these number values on their own, since the numbers of pi are already well established and in this case have not been altered in any way. It's time to search elsewhere...
 
 
 ![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/974d7bc4-4850-4b9d-afd5-9766e7c88684)
