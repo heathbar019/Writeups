@@ -2,6 +2,7 @@
 
 ## 2025
 * [2025.06.14 **DoD Cyber Sentinel Challenge 2025**](2025-06-14-DoD-Cyber-Sentinel-Challenge)
+* [2025.07.04 **R3CTF 2025**](2025-07-04-DoD-Cyber-Sentinel-Challenge)
 
 ## 2024
 * [2024.03.06 **UTCTF 2024**](2024-03-06-UTCTF)
